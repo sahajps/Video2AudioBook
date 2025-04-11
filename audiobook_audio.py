@@ -8,7 +8,7 @@ from tqdm import tqdm
 import os
 import json
 
-device = "cuda:6" if torch.cuda.is_available() else "cpu"
+device = "cuda" if torch.cuda.is_available() else "cpu"
 
 model = ParlerTTSForConditionalGeneration.from_pretrained("parler-tts/parler-tts-mini-expresso").to(device)
 tokenizer = AutoTokenizer.from_pretrained("parler-tts/parler-tts-mini-expresso")

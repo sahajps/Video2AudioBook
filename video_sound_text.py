@@ -24,7 +24,7 @@ pipe = pipeline(
     tokenizer=processor.tokenizer,
     feature_extractor=processor.feature_extractor,
     torch_dtype=torch.float16,
-    device="cuda:7",
+    device=device,
     return_timestamps=True
 )
 

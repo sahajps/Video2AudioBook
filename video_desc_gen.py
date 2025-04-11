@@ -8,11 +8,13 @@ from glob import glob
 import json
 import os
 
+device = "cuda"
+
 processor = LlavaNextVideoProcessor.from_pretrained("llava-hf/LLaVA-NeXT-Video-7B-hf")
 model = LlavaNextVideoForConditionalGeneration.from_pretrained(
-    "/home/sahajps/Models/LLaVA-NeXT-Video-7B-hf",
+    "llava-hf/LLaVA-NeXT-Video-7B-hf",
     torch_dtype=torch.float16,
-    device_map='cuda'
+    device_map=device
 )
 
 def read_video_pyav(container, indices):
