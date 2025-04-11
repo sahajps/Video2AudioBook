@@ -1,0 +1,21 @@
+# python=3.11.11
+# sudo apt install python3.11-dev
+# ipykernel==6.29.5
+
+accelerate==1.5.2
+transformers==4.50.3
+bitsandbytes==0.45.4
+av==14.2.0
+pillow==11.1.0
+protobuf==6.30.2
+sentencepiece==0.2.0
+
+numpy==2.1 # required for whisper namba (maybe)
+openai-whisper
+moviepy==2.1.2
+torchaudio==2.6.0
+# ffmpeg==1.4
+openai==1.69.0
+timeout_decorator==0.5.0
+
+parler_tts==0.2.3
